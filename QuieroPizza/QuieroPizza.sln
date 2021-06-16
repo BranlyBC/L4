@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.WebAdmin", "Qui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.Win", "QuieroPizza.Win\QuieroPizza.Win.csproj", "{48E69048-9A0C-4C89-A6F2-85F39E744741}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.BL", "QuieroPizza.BL\QuieroPizza.BL.csproj", "{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{48E69048-9A0C-4C89-A6F2-85F39E744741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48E69048-9A0C-4C89-A6F2-85F39E744741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E69048-9A0C-4C89-A6F2-85F39E744741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
