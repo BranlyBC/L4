@@ -1,4 +1,4 @@
-﻿using QuieroPizza.Web.Models;
+﻿using QuieroPizza.BL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +13,11 @@ namespace QuieroPizza.Web.Controllers
         public ActionResult Index()
         {
 
+            var productoBL = new ProductosBL();
+            var listadeProductos = productoBL.ObtenerProductos();
+
             
-            return View();
+            return View(listadeProductos);
         }
     }
 }
