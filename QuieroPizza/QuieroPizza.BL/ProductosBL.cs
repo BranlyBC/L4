@@ -8,6 +8,14 @@ namespace QuieroPizza.BL
 {
     public class ProductosBL
     {
+        Contexto _contexto;
+
+        public ProductosBL()
+        {
+            _contexto = new Contexto();
+        }
+
+
          public List<Producto> ObtenerProductos ()
         {
             var producto1 = new Producto();
