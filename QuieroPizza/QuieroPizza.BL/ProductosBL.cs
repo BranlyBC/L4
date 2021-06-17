@@ -18,7 +18,6 @@ namespace QuieroPizza.BL
 
          public List<Producto> ObtenerProductos()
         {
-            
             return _contexto.Productos.ToList();
 
             
