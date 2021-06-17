@@ -10,9 +10,10 @@ namespace QuieroPizza.BL
     public class Contexto: DbContext
 
     {
-        public Contexto() : base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" +
 
-        public Contexto(): base("QuieroPizzaDB")
+
+        public Contexto() : base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" +
+            Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\QuieroPizzaDB.mdf")
         {
                 
         }
