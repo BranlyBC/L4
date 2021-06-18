@@ -18,11 +18,8 @@ namespace QuieroPizza.Win
             InitializeComponent();
             var productosBL = new ProductosBL();
             var listadeProductos = productosBL.ObtenerProductos();
-        }
- 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
+                
     }
 }
