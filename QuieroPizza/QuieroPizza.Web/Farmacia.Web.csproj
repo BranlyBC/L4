@@ -176,9 +176,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\QuieroPizza.BL\QuieroPizza.BL.csproj">
+    <ProjectReference Include="..\QuieroPizza.BL\Farmacia.BL.csproj">
       <Project>{2dccf068-3a1c-4c16-87cd-6b934b8931d1}</Project>
-      <Name>QuieroPizza.BL</Name>
+      <Name>Farmacia.BL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.Web", "QuieroPizza.Web\QuieroPizza.Web.csproj", "{7BA597C4-BCFB-4265-BBD0-F94E9ACD03A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.Web", "QuieroPizza.Web\Farmacia.Web.csproj", "{7BA597C4-BCFB-4265-BBD0-F94E9ACD03A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.WebAdmin", "QuieroPizza.WebAdmin\QuieroPizza.WebAdmin.csproj", "{35B6FE7B-31A1-42AD-ADEF-70F4425EDB24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.WebAdmin", "QuieroPizza.WebAdmin\Farmacia.WebAdmin.csproj", "{35B6FE7B-31A1-42AD-ADEF-70F4425EDB24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.Win", "QuieroPizza.Win\QuieroPizza.Win.csproj", "{48E69048-9A0C-4C89-A6F2-85F39E744741}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.Win", "QuieroPizza.Win\Farmacia.Win.csproj", "{48E69048-9A0C-4C89-A6F2-85F39E744741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuieroPizza.BL", "QuieroPizza.BL\QuieroPizza.BL.csproj", "{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia.BL", "QuieroPizza.BL\Farmacia.BL.csproj", "{2DCCF068-3A1C-4C16-87CD-6B934B8931D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
