@@ -34,11 +34,11 @@ namespace QuieroPizza.WebAdmin.Controllers
         [HttpPost]
         public ActionResult Crear(Categoria categoria)
         {
-            if (ModelState.IsValid)
+            if(ModelState.IsValid)
             {
-                if (categoria.Descripcion != categoria.Descripcion.Trim())
+                if(categoria.Descripcion != categoria.Descripcion.Trim())
                 {
-                    ModelState.AddModelError("Descripcion", "La descripcion no debe contener espcios al inicio o al final");
+                    ModelState.AddModelError("Descripcion", "La descripcion no debe contener espacios al inicio o al final");
                     return View(categoria);
                 }
                 _categoriasBL.GuardarCategoria(categoria);
@@ -47,7 +47,6 @@ namespace QuieroPizza.WebAdmin.Controllers
             }
 
             return View(categoria);
-           
         }
 
         public ActionResult Editar(int id)
@@ -64,7 +63,7 @@ namespace QuieroPizza.WebAdmin.Controllers
             {
                 if (categoria.Descripcion != categoria.Descripcion.Trim())
                 {
-                    ModelState.AddModelError("Descripcion", "La descripcion no debe contener espcios al inicio o al final");
+                    ModelState.AddModelError("Descripcion", "La descripcion no debe contener espacios al inicio o al final");
                     return View(categoria);
                 }
                 _categoriasBL.GuardarCategoria(categoria);
