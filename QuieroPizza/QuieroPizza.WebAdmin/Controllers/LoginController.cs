@@ -13,5 +13,11 @@ namespace QuieroPizza.WebAdmin.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Index(FormCollection DATA)
+        {
+            return RedirectToAction("Index","Home");
+        }
+
     }
 }
