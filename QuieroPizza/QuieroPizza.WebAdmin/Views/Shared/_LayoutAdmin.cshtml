@@ -23,7 +23,21 @@
             <div id="cm-menu-items-wrapper">
                 <div id="cm-menu-scroller">
                     <ul class="cm-menu-items">
-                        <li class="active"><a href="index.html" class="sf-house">Home</a></li>
+                        <li class="active">
+                            <a href="/" class="sf-house">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/Productos" class="sf-layers">Productos</a>
+                        </li>
+                        <li>
+                            @Html.ActionLink("Categorias", "Index", "Categorias", null, new { @class = "sf-house" })
+                        </li>
+                        <li>
+                            <a href="/Clientes" class="sf-profile-group">Clientes</a>
+                        </li>
+                        <li>
+                            <a href="/Ordenes" class="sf-box-in">Ordenes</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -50,9 +64,9 @@
     </header>
     <div id="global">
         <div class="container-fluid">
-            <div class="panel panel-default">               
+            <div class="panel panel-default">
                 <div class="panel-body" id="demo-buttons">
-                    @RenderBody()            
+                    @RenderBody()
                 </div>
             </div>
         </div>
