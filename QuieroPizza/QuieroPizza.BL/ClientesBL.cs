@@ -32,7 +32,6 @@ namespace QuieroPizza.BL
         {
             ListadeClientes = _contexto.Clientes
                 .Where(r => r.Activo == true)
-                .OrderBy(r => r.Nombre)
                 .ToList();
 
             return ListadeClientes;
