@@ -35,4 +35,5 @@ namespace QuieroPizza.Win
             listadeVentasPorProductoBindingSource.ResetBindings(false);
         }
     }
+
 }
