@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace QuieroPizza.WebAdmin.Controllers
 {
+    [Authorize]
     public class CategoriasController : Controller
     {
         CategoriasBL _categoriasBL;
@@ -34,13 +35,14 @@ namespace QuieroPizza.WebAdmin.Controllers
         [HttpPost]
         public ActionResult Crear(Categoria categoria)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                if(categoria.Descripcion != categoria.Descripcion.Trim())
+                if (categoria.Descripcion != categoria.Descripcion.Trim())
                 {
-                    ModelState.AddModelError("Descripcion", "La descripcion no debe contener espacios al inicio o al final");
+                    ModelState.AddModelError("Descripcion", "La descripción no debe contener espacios al inicio o al final");
                     return View(categoria);
                 }
+
                 _categoriasBL.GuardarCategoria(categoria);
 
                 return RedirectToAction("Index");
@@ -51,9 +53,9 @@ namespace QuieroPizza.WebAdmin.Controllers
 
         public ActionResult Editar(int id)
         {
-            var producto = _categoriasBL.ObtenerCategoria(id);
+            var categoria = _categoriasBL.ObtenerCategoria(id);
 
-            return View(producto);
+            return View(categoria);
         }
 
         [HttpPost]
@@ -63,9 +65,10 @@ namespace QuieroPizza.WebAdmin.Controllers
             {
                 if (categoria.Descripcion != categoria.Descripcion.Trim())
                 {
-                    ModelState.AddModelError("Descripcion", "La descripcion no debe contener espacios al inicio o al final");
+                    ModelState.AddModelError("Descripcion", "La descripción no debe contener espacios al inicio o al final");
                     return View(categoria);
                 }
+
                 _categoriasBL.GuardarCategoria(categoria);
 
                 return RedirectToAction("Index");
@@ -76,22 +79,22 @@ namespace QuieroPizza.WebAdmin.Controllers
 
         public ActionResult Detalle(int id)
         {
-            var producto = _categoriasBL.ObtenerCategoria(id);
+            var categoria = _categoriasBL.ObtenerCategoria(id);
 
-            return View(producto);
+            return View(categoria);
         }
 
         public ActionResult Eliminar(int id)
         {
-            var producto = _categoriasBL.ObtenerCategoria(id);
+            var categoria = _categoriasBL.ObtenerCategoria(id);
 
-            return View(producto);
+            return View(categoria);
         }
 
         [HttpPost]
-        public ActionResult Eliminar(Categoria producto)
+        public ActionResult Eliminar(Categoria categoria)
         {
-            _categoriasBL.EliminarCategoria(producto.Id);
+            _categoriasBL.EliminarCategoria(categoria.Id);
 
             return RedirectToAction("Index");
         }
